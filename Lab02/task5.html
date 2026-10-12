@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>Task 5 - Online Exam Portal</title>
+    </head>
+    <body>
+        <h1>Online Exam Portal</h1>
+
+        <h2>Exam Details</h2>
+        <table border="1" cellpadding="6" cellspacing="0">
+            <tbody>
+                <tr>
+                    <th scope="row">Course</th>
+                    <td>Web Application Development</td>
+                </tr>
+                <tr>
+                    <th scope="row">Date</th>
+                    <td>20 December 2026</td>
+                </tr>
+                <tr>
+                    <th scope="row">Allowed items</th>
+                    <td>
+                        <ul>
+                            <li>Pen</li>
+                            <li>Student card</li>
+                            <li>Calculator</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Instructions</h2>
+        <ol>
+            <li>Before the exam
+                <ul type="circle">
+                    <li>Arrive 30 minutes early</li>
+                    <li>Bring your student card</li>
+                </ul>
+            </li>
+            <li>During the exam
+                <ul type="circle">
+                    <li>Switch off your phone</li>
+                    <li>Do not leave the hall in the first 30 minutes</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>Feedback</h2>
+        <form method="get">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <br><br>
+
+            <table border="1" cellpadding="6" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th scope="col">Poor</th>
+                        <th scope="col">Fair</th>
+                        <th scope="col">Good</th>
+                        <th scope="col">Excellent</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Course content</th>
+                        <td><input type="radio" name="course_content" value="poor"></td>
+                        <td><input type="radio" name="course_content" value="fair"></td>
+                        <td><input type="radio" name="course_content" value="good"></td>
+                        <td><input type="radio" name="course_content" value="excellent"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Instructor</th>
+                        <td><input type="radio" name="instructor" value="poor"></td>
+                        <td><input type="radio" name="instructor" value="fair"></td>
+                        <td><input type="radio" name="instructor" value="good"></td>
+                        <td><input type="radio" name="instructor" value="excellent"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Lab sessions</th>
+                        <td><input type="radio" name="lab_sessions" value="poor"></td>
+                        <td><input type="radio" name="lab_sessions" value="fair"></td>
+                        <td><input type="radio" name="lab_sessions" value="good"></td>
+                        <td><input type="radio" name="lab_sessions" value="excellent"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+
+            <label for="comments">Comments:</label>
+            <br>
+            <textarea id="comments" name="comments" rows="5" cols="50"></textarea>
+            <br><br>
+
+            <input type="checkbox" id="contact" name="contact" value="yes">
+            <label for="contact">Contact me about my feedback</label>
+            <br><br>
+
+            <input type="submit" value="Send Feedback">
+            <input type="reset" value="Clear">
+        </form>
+    </body>
+</html>
