@@ -1,0 +1,128 @@
+body {
+    background-color: #eef1f4;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    width: 92%;
+}
+
+.resume {
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+.resume-header {
+    background-color: #214f78;
+    color: white;
+    padding: 36px 60px;
+    position: relative;
+}
+
+.resume-header h1 {
+    font-size: 42px;
+    letter-spacing: 1px;
+    margin: 8px 0;
+    width: 55%;
+}
+
+.degree-line {
+    color: #d8e4f1;
+    font-size: 18px;
+    margin: 8px 0 24px;
+    width: 55%;
+}
+
+.email-line {
+    margin: 0;
+    width: 55%;
+}
+
+.email-line a {
+    background-color: #ffda5c;
+    border-radius: 24px;
+    color: #214f78;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 18px;
+    text-decoration: none;
+}
+
+.profile-picture {
+    border: 6px solid white;
+    border-radius: 50%;
+    height: 170px;
+    position: absolute;
+    right: 42px;
+    top: 28px;
+    width: 170px;
+}
+
+.resume-content {
+    padding: 0 24px;
+}
+
+.resume-column {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 24px;
+    vertical-align: top;
+}
+
+.sidebar {
+    background-color: #f3f5f8;
+    width: 30%;
+}
+
+.main-column {
+    width: 69%;
+}
+
+.resume-column h2 {
+    border-bottom: 3px solid #214f78;
+    color: #214f78;
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin: 8px 0 22px;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.resume-column p, .work-list {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.skill-list {
+    margin-bottom: 28px;
+}
+
+.skill-badge {
+    background-color: #d9e3f3;
+    border-radius: 18px;
+    color: #214f78;
+    display: inline-block;
+    margin: 0 5px 8px 0;
+    padding: 6px 12px;
+}
+
+.education-entry {
+    margin: 10px 0;
+}
+
+.education-detail {
+    color: #888;
+    display: inline-block;
+    text-align: right;
+    width: 100%;
+}
+
+.work-list {
+    list-style-type: square;
+    margin-left: 20px;
+    padding-left: 16px;
+}
+
+.work-list li {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,26 @@
+h2 {
+    color: purple;
+}
+
+.note {
+    border: 2px solid #e0b94f;
+}
+
+#id-rule {
+    color: #008b8b;
+    font-weight: bold;
+}
+
+.important-rule {
+    color: darkorange !important;
+}
+
+p.box {
+    background-color: #e8f1ff;
+    border: 1px solid #3875bd;
+    padding: 10px;
+}
+
+em {
+    color: blue;
+}

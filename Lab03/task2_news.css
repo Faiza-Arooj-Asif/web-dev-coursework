@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    color: #111;
+    font-family: Arial, sans-serif;
+}
+
+nav, footer {
+    border: 1px solid #ccc;
+}
+
+#main-navigation {
+    background-color: #214f78;
+    padding: 20px 32px;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ffda5c;
+    text-decoration: underline;
+}
+
+#news-board {
+    margin: 0 40px;
+}
+
+.page-title {
+    font-family: Georgia, serif;
+    font-size: 46px;
+    margin: 42px 0;
+}
+
+.news-story {
+    border-left: 8px solid #3875bd;
+    margin: 28px 0;
+    padding: 18px 24px;
+}
+
+.news-story h2, .section-title {
+    color: navy;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    margin: 0 0 12px;
+}
+
+.lead-story {
+    border: 3px dashed #888;
+}
+
+.notice-story {
+    background-color: #fdebea;
+}
+
+.posted-date {
+    color: #888;
+    font-size: 18px;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.news-story p {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.section-title {
+    margin-top: 32px;
+}
+
+.weekly-list {
+    font-size: 22px;
+    list-style-type: square;
+    margin-left: 36px;
+}
+
+.important-news {
+    color: #bd1010;
+    font-weight: bold;
+}
+
+.page-footer {
+    border-left: 0;
+    border-right: 0;
+    color: #888;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 30px;
+    padding: 16px;
+    text-align: center;
+}

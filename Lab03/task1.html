@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Task 1 - CSS Cascade</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #555;
+            margin: 40px;
+        }
+
+        h2 {
+            color: #555;
+        }
+
+        p {
+            color: #555;
+            font-size: 20px;
+        }
+
+        .note {
+            background-color: #fff2cc;
+            padding: 12px;
+        }
+
+        .class-rule {
+            color: #1457d9;
+        }
+
+    </style>
+    <link rel="stylesheet" href="task1_style.css">
+</head>
+<body>
+    <h1>CSS Cascade Puzzle</h1>
+    <hr>
+
+    <h2>Purple: both sheets set h2, and the external sheet is linked later.</h2>
+    <p>Grey: the internal p rule.</p>
+    <p class="note">Yellow background from the internal .note, border from the external .note.</p>
+    <p style="color: crimson;">Crimson: an inline style beats both sheets.</p>
+    <p class="class-rule">Blue: a class beats the p element rule.</p>
+    <p id="id-rule" class="class-rule">Teal and bold: the id beats the class.</p>
+    <p class="important-rule" style="color: crimson;">Orange: !important in the external sheet beats even this inline style.</p>
+    <p class="box">Light blue box: p.box styles paragraphs with class box ...</p>
+    <div class="box">... but not this div, which also has class box.</div>
+    <p>Inside this grey paragraph, <span>this span inherits the grey colour</span> and <em>this em is blue</em>.</p>
+</body>
+</html>
