@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lab 05 - Task 5: UW CS Society</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand" href="task5.html">UW CS Society</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="task5.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="task3_register.html">Members</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+    <section class="p-5 mb-4 bg-body-tertiary rounded-3">
+      <h1 class="display-5 fw-bold">Learn. Build. Share.</h1>
+      <p class="lead col-md-8">The Computer Science Society runs hands-on workshops, coding contests and mentoring circles for every student of the department.</p>
+      <a class="btn btn-primary" href="task3_register.html">Join the Society</a>
+    </section>
+
+    <section id="events" class="mb-4">
+      <h2 class="h4 mb-3">Upcoming Events</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered table-hover align-middle">
+          <thead class="table-dark">
+            <tr>
+              <th scope="col">Date</th>
+              <th scope="col">Event</th>
+              <th scope="col">Venue</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>22 Oct 2026</td><td>Git and GitHub Workshop</td><td>Lab 3</td></tr>
+            <tr class="table-warning"><td>5 Nov 2026</td><td>Web Design Contest</td><td>Seminar Hall</td></tr>
+            <tr><td>19 Nov 2026</td><td>Alumni Talk: Life as a Developer</td><td>Auditorium</td></tr>
+            <tr><td>3 Dec 2026</td><td>24-hour Hackathon</td><td>CS Block</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="contact" class="mb-4">
+      <h2 class="h4 mb-3">Quick Contact</h2>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="col-12">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Send</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    &copy; 2026 UW CS Society
+  </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

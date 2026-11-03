@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lab 05 - Task 3: Society Membership</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand" href="task5.html">UW CS Society</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="task5.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="task5.html#events">Events</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="task3_register.html">Members</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="task5.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+    <h1 class="h3 mb-4">Society Membership Form</h1>
+    <form class="row g-3">
+      <div class="col-md-6">
+        <label for="fullName" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="fullName" name="fullName" required>
+      </div>
+      <div class="col-md-6">
+        <label for="rollNumber" class="form-label">Roll Number</label>
+        <input type="text" class="form-control" id="rollNumber" name="rollNumber" required>
+      </div>
+      <div class="col-md-8">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="col-md-4">
+        <label for="section" class="form-label">Section</label>
+        <select class="form-select" id="section" name="section" required>
+          <option value="" selected disabled>Choose...</option>
+          <option value="A">Section A</option>
+          <option value="B">Section B</option>
+          <option value="C">Section C</option>
+        </select>
+      </div>
+      <fieldset class="col-12">
+        <legend class="form-label mb-1">Year of Study</legend>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="year" id="year1" value="1" required>
+          <label class="form-check-label" for="year1">Year 1</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="year" id="year2" value="2">
+          <label class="form-check-label" for="year2">Year 2</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="year" id="year3" value="3">
+          <label class="form-check-label" for="year3">Year 3</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="year" id="year4" value="4">
+          <label class="form-check-label" for="year4">Year 4</label>
+        </div>
+      </fieldset>
+      <fieldset class="col-12">
+        <legend class="form-label mb-1">Interests (choose any)</legend>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="interestWeb" name="interests" value="web">
+          <label class="form-check-label" for="interestWeb">Web Development</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="interestAI" name="interests" value="ai">
+          <label class="form-check-label" for="interestAI">Artificial Intelligence</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="interestDatabases" name="interests" value="databases">
+          <label class="form-check-label" for="interestDatabases">Databases</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="interestNetworking" name="interests" value="networking">
+          <label class="form-check-label" for="interestNetworking">Networking</label>
+        </div>
+      </fieldset>
+      <div class="col-12">
+        <label for="reason" class="form-label">Why do you want to join?</label>
+        <textarea class="form-control" id="reason" name="reason" rows="3"></textarea>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="rules" name="rules" value="yes" required>
+          <label class="form-check-label" for="rules">I have read and agree to the society rules.</label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-success">Register</button>
+        <button type="reset" class="btn btn-outline-secondary">Clear</button>
+      </div>
+    </form>
+  </main>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
